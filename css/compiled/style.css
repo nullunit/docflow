@@ -154,7 +154,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); }
   header .logo {
-    width: 100px;
+    width: 250px;
     background: url(../../img/logo.svg) left center no-repeat; }
   header nav {
     display: flex;
@@ -170,6 +170,8 @@ header {
         color: #692626; }
     header nav .button {
       display: inline-block;
+      background-color: #F5CA81;
+      color: #692626;
       font-size: 14px;
       line-height: 16px;
       padding: 8px 32px; }
@@ -199,9 +201,9 @@ footer {
     margin: 0 0 24px; }
 
   h2 {
-    font-size: 32px;
-    line-height: 40px;
-    margin: 0 0 24px; }
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px; }
 
   header {
     position: relative; }
