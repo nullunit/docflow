@@ -106,9 +106,15 @@ p  { font-size: 16px; line-height: 24px; margin: 0 0 24px; }
 img {
   display: block;
   max-width: 100%;
+  margin: 0;
+  text-align: center;
   width: auto;
   height: auto;
   object-fit: contain;
+  &.hero-image {
+      max-width: 86%;
+      margin: -20px 7% 50px;
+  }
 }
 ul, li {
   margin: 0;
@@ -153,7 +159,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   .logo {
-    width: 250px;
+    width: 110px;
     background: url(../../img/logo.svg) left center no-repeat;
   }
   nav {
@@ -200,24 +206,34 @@ footer {
 @media screen and (min-width: 700px) {
 
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 300;
-    line-height: 55px;
+    line-height: 36px;
     margin: 0 0 24px;
   }
   h2 {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 16px;
+    margin: 0;
+  }
+
+  img {
+      &.hero-image {
+          max-width: 100%;
+          margin: 0;
+      }
   }
 
   header {
       position: relative;
+      .logo {
+        width: 250px;
+      }
       nav {
           .link-button { display: block; }
       }
   }
-  section { padding: 120px 0; }
+  section { padding: 60px 0; }
 
   .margins {
     padding: 0;
@@ -237,29 +253,39 @@ footer {
     }
     &.two   {
       .column { width: 50%; }
+      .column-left { width: 46%; padding-right: 0px; }
+      .column-right { width: 54%; padding-left: 0px; }
     }
     &.three {
       .column { width: 33.33%; }
     }
+
   }
 
-  .column-left { padding-right: 20px; }
-  .column-right { padding-left: 20px; }
+
 
   button, .button { width: auto; display: inline-block; }
 
   .hero {
     padding-top: 50px;
+    .body-copy { padding-right: 10%; }
   }
 
 }
 
 @media screen and (min-width: 1025px) {
 
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 44px;
+      margin: 0 0 24px;
+    }
+
   section { padding: 160px 0; }
 
   .margins {
-    padding: 120px 0;
+    padding: 60px 0;
     width: 960px;
   }
   footer {
@@ -269,7 +295,10 @@ footer {
   .column-left {  }
   .column-right {  }
 
-  .hero { padding-top: 50px }
+  .hero {
+      padding-top: 50px;
+      .body-copy { padding-right: 20%; }
+  }
 
 }
 

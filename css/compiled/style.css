@@ -109,9 +109,14 @@ p {
 img {
   display: block;
   max-width: 100%;
+  margin: 0;
+  text-align: center;
   width: auto;
   height: auto;
   object-fit: contain; }
+  img.hero-image {
+    max-width: 86%;
+    margin: -20px 7% 50px; }
 
 ul, li {
   margin: 0;
@@ -154,7 +159,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); }
   header .logo {
-    width: 250px;
+    width: 110px;
     background: url(../../img/logo.svg) left center no-repeat; }
   header nav {
     display: flex;
@@ -196,23 +201,29 @@ footer {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 300;
-    line-height: 55px;
+    line-height: 36px;
     margin: 0 0 24px; }
 
   h2 {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 16px; }
+    margin: 0; }
+
+  img.hero-image {
+    max-width: 100%;
+    margin: 0; }
 
   header {
     position: relative; }
+    header .logo {
+      width: 250px; }
     header nav .link-button {
       display: block; }
 
   section {
-    padding: 120px 0; }
+    padding: 60px 0; }
 
   .margins {
     padding: 0;
@@ -231,34 +242,44 @@ footer {
         width: 50%; }
     .columns.two .column {
       width: 50%; }
+    .columns.two .column-left {
+      width: 46%;
+      padding-right: 0px; }
+    .columns.two .column-right {
+      width: 54%;
+      padding-left: 0px; }
     .columns.three .column {
       width: 33.33%; }
-
-  .column-left {
-    padding-right: 20px; }
-
-  .column-right {
-    padding-left: 20px; }
 
   button, .button {
     width: auto;
     display: inline-block; }
 
   .hero {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+    .hero .body-copy {
+      padding-right: 10%; } }
 @media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 44px;
+    margin: 0 0 24px; }
+
   section {
     padding: 160px 0; }
 
   .margins {
-    padding: 120px 0;
+    padding: 60px 0;
     width: 960px; }
 
   footer .margins {
     padding: 16px 0; }
 
   .hero {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+    .hero .body-copy {
+      padding-right: 20%; } }
 @media screen and (min-width: 1440px) {
   .margins {
     padding: 120px 0;
