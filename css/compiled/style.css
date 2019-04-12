@@ -240,7 +240,8 @@ footer {
     padding-left: 20px; }
 
   button, .button {
-    width: auto; }
+    width: auto;
+    display: inline-block; }
 
   .hero {
     padding-top: 50px; } }
