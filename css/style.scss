@@ -254,7 +254,9 @@ footer {
   .margins {
     padding: 120px 0;
     width: 960px;
-
+  }
+  footer {
+      .margins { padding: 16px 0; }
   }
 
   .column-left {  }
@@ -269,6 +271,9 @@ footer {
   .margins {
     padding: 120px 0;
     width: 1200px;
+  }
+  footer {
+      .margins { padding: 16px 0; }
   }
 
   .column-left {  }

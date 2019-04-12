@@ -249,11 +249,17 @@ footer {
     padding: 120px 0;
     width: 960px; }
 
+  footer .margins {
+    padding: 16px 0; }
+
   .hero {
     padding-top: 50px; } }
 @media screen and (min-width: 1440px) {
   .margins {
     padding: 120px 0;
-    width: 1200px; } }
+    width: 1200px; }
+
+  footer .margins {
+    padding: 16px 0; } }
 
 /*# sourceMappingURL=style.css.map */
