@@ -96,12 +96,12 @@ h1 {
   span { font-weight: 700; display: block; }
 }
 h2 {
-  font-size: 24px;
-  line-height: 32px;
-  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
   span { display: block; }
 }
-h3 { font-size: 20px; margin: 0; }
 p  { font-size: 16px; line-height: 24px; margin: 0 0 24px; }
 img {
   display: block;
@@ -184,14 +184,6 @@ header {
   position: relative;
   height: auto;
   padding: 80px 0 80px;
-  .platforms {
-    position: relative;
-    //bottom: 48px;
-    width: 100%;
-    padding: 0 0 0 28px;
-    margin: 32px 0 0 0;
-    background: url(../../img/icon-android.svg) left center no-repeat;
-  }
 }
 
 footer {
@@ -242,17 +234,15 @@ footer {
     &.three {
       .column { width: 33.33%; }
     }
-    &.four  { .column { width: 25%; } }
   }
 
-  .column-left {  }
-  .column-right {  }
+  .column-left { padding-right: 20px; }
+  .column-right { padding-left: 20px; }
 
   button, .button { width: auto; }
 
   .hero {
-    height: 70vh;
-    padding-top: 22vh;
+    padding-top: 50px;
   }
 
 }
@@ -270,7 +260,7 @@ footer {
   .column-left {  }
   .column-right {  }
 
-  .hero { height: 90vh; padding-top: 30vh }
+  .hero { padding-top: 50px }
 
 }
 
