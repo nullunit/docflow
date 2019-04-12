@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', helvetica, arial, sans-serif; fo
 h1 {
   font-size: 32px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 1.2;
   margin: 0 0 24px;
   span { font-weight: 700; display: block; }
 }
@@ -194,7 +194,7 @@ header {
 .hero {
   position: relative;
   height: auto;
-  padding: 80px 0 80px;
+  padding: 80px 0 30px;
   .button { margin: 20px 0; }
 }
 
@@ -213,7 +213,7 @@ footer {
   h1 {
     font-size: 30px;
     font-weight: 300;
-    line-height: 36px;
+    line-height: 1.2;
     margin: 0 0 24px;
   }
   h2 {
@@ -249,7 +249,7 @@ footer {
   .columns {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row-reverse;
     &.centered {
       text-align: center;
@@ -282,7 +282,7 @@ footer {
 
     h1 {
       font-size: 36px;
-      line-height: 44px;
+      line-height: 1.2;
       margin: 0 0 24px;
     }
 
