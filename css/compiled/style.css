@@ -133,13 +133,14 @@ button, .button {
   outline: none;
   background-color: #5C8CD7;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   padding: 16px 24px;
   width: 100%;
   text-decoration: none;
   border-radius: 3px;
+  text-align: center;
   cursor: pointer;
   transition: .1s all ease-in-out; }
   button:hover, .button:hover {
@@ -193,6 +194,8 @@ header {
   position: relative;
   height: auto;
   padding: 80px 0 80px; }
+  .hero .button {
+    margin: 20px 0; }
 
 footer {
   background-color: #000000; }
@@ -262,7 +265,6 @@ footer {
 @media screen and (min-width: 1025px) {
   h1 {
     font-size: 36px;
-    font-weight: 300;
     line-height: 44px;
     margin: 0 0 24px; }
 
@@ -281,6 +283,9 @@ footer {
     .hero .body-copy {
       padding-right: 20%; } }
 @media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 42px; }
+
   .margins {
     padding: 120px 0;
     width: 1200px; }
