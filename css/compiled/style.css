@@ -58,7 +58,7 @@ footer {
 
 .columns {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: flex-wrap;
   justify-content: space-between; }
   .columns .column img {
     width: 100%; }
@@ -160,6 +160,7 @@ header {
     display: flex;
     justify-content: flex-end; }
     header nav .link-button {
+      display: none;
       font-size: 14px;
       line-height: 16px;
       padding: 8px 32px 8px 0;
@@ -207,6 +208,8 @@ footer {
 
   header {
     position: relative; }
+    header nav .link-button {
+      display: block; }
 
   section {
     padding: 120px 0; }
@@ -217,7 +220,7 @@ footer {
 
   .columns {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center; }
     .columns.centered {
       text-align: center;

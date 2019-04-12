@@ -69,7 +69,7 @@ footer  { width: 100%; padding: 40px 0; margin: 0; }
 
 .columns {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: flex-wrap;
   justify-content: space-between;
   .column {
     img { width: 100%; }
@@ -160,6 +160,7 @@ header {
     display: flex;
     justify-content: flex-end;
     .link-button {
+      display: none;
       font-size:14px;
       line-height: 16px;
       padding: 8px 32px 8px 0;
@@ -210,7 +211,12 @@ footer {
     margin: 0 0 16px;
   }
 
-  header { position: relative; }
+  header {
+      position: relative;
+      nav {
+          .link-button { display: block; }
+      }
+  }
   section { padding: 120px 0; }
 
   .margins {
@@ -221,7 +227,7 @@ footer {
 
   .columns {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     &.centered {
       text-align: center;
