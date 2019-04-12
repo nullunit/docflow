@@ -239,12 +239,6 @@ footer {
     .columns.four .column {
       width: 25%; }
 
-  .column-left {
-    padding-right: 30%; }
-
-  .column-right {
-    padding-left: 30%; }
-
   button, .button {
     width: auto; }
 
@@ -259,24 +253,12 @@ footer {
     padding: 0;
     width: 960px; }
 
-  .column-left {
-    padding-right: 360px; }
-
-  .column-right {
-    padding-left: 60%; }
-
   .hero {
     height: 90vh;
     padding-top: 30vh; } }
 @media screen and (min-width: 1440px) {
   .margins {
     padding: 0;
-    width: 1200px; }
-
-  .column-left {
-    padding-right: 750px; }
-
-  .column-right {
-    padding-left: 60%; } }
+    width: 1200px; } }
 
 /*# sourceMappingURL=style.css.map */
